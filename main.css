@@ -1,0 +1,8 @@
+/* dat bien html */
+:root{
+/* dung 2 dau -- dat bien */
+--text-color: #09991f;
+}
+h1{
+    color: var(--text-color);
+}
