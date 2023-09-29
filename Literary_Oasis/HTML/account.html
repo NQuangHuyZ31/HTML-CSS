@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+
+  <title>Dịch vụ</title>
+</head>
+
+<body class="body transition-opacity opacity-0 bg-maunhat overflow-x-hidden">
+
+  <!-- HEADER -->
+  <header class="header bg-header text-white pb-3 pt-md-3 pt-2" id="header"></header>
+
+  <!-- BODY -->
+  <div class="container mt-4" id="container">
+    <div class="row bg-white position-relative pb-3">
+      <div class="col-md-3 col-8 ps-md-4 pe-md-3 py-3 my-md-3 bg-white border-end border-2" id="sidebar"
+        style="right: 100%; opacity: 0;">
+        <div class="h4 pb-3 border-bottom border-2 mb-2 position-relative">
+          TÀI KHOẢN
+        </div>
+
+        <div class="">
+          <ul class="list-unstyled">
+            <li class="py-3 border-bottom text-hover cursor-pointer"
+              onclick="javascrip: showContent('f-bdktk'); showSidebar();">
+              <span>Bảng điều khiển tài khoản</span>
+            </li>
+            <li class="py-3 border-bottom text-hover cursor-pointer"
+              onclick="javascrip: showContent('f-tttk'); showSidebar();">
+              <span>Thông tin tài khoản</span>
+            </li>
+            <li class="py-3 border-bottom text-hover cursor-pointer"
+              onclick="javascrip: showContent('f-sdc'); showSidebar();">
+              <span>Sổ địa chỉ</span>
+            </li>
+            <li class="py-3 border-bottom text-hover cursor-pointer"
+              onclick="javascrip: showContent('f-dhct'); showSidebar();">
+              <span>Đơn hàng của tôi</span>
+            </li>
+            <li class="py-3 border-bottom text-hover cursor-pointer"
+              onclick="javascrip: showContent('f-vv'); showSidebar();">
+              <span>Ví voucher</span>
+            </li>
+            <li class="py-3 border-bottom text-hover cursor-pointer"
+              onclick="javascrip: showContent('f-tkl'); showSidebar();">
+              <span>Tài khoản L-Point</span>
+            </li>
+            <li class="py-3 border-bottom text-hover cursor-pointer"
+              onclick="javascrip: showContent('f-tb'); showSidebar();">
+              <span>Thông báo</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- BẢNG ĐIỂU KHIỂN TÀI KHOẢN -->
+      <div class="col-md-9 col-12 my-md-3 show-content d-none transition-opacity set-h" id="f-bdktk">
+        <div class=" col-12 h4 pt-3 pb-3 ps-md-3 text-danger d-flex justify-content-between align-items-center m-0">
+          <span>BẢNG ĐIỂU KHIỂN TÀI KHOẢN</span>
+          <span id="sidebar-toggle" class="ms-2 py-1 px-2 rounded-2 position-relative bg-white" style="left: 0;"
+            onclick="showSidebar()"><i class="fa-brands fa-servicestack"></i></span>
+        </div>
+
+        <div class="col-12" style="text-align: justify;">
+          <div class="col-md-11 col-12 mt-3 bg-account py-3 px-4 rounded-4 m-auto">
+            <table class="w-100">
+              <tbody>
+                <tr>
+                  <td>Họ và tên</td>
+                  <td>Lê Thanh Bá</td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td>lethanhba0505@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>Cấp độ thành viên</td>
+                  <td>Thân thiết</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    Thông tin tài khoản
+                  </td>
+                </tr>
+                <tr>
+                  <td>F-point</td>
+                  <td>13.356.000đ</td>
+                </tr>
+                <tr>
+                  <td>Freeship</td>
+                  <td>2 lần</td>
+                </tr>
+                <tr>
+                  <td>Bọc sách</td>
+                  <td>Sắp diễn ra</td>
+                </tr>
+                <tr>
+                  <td>Số đơn hàng trong năm 2023</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Số tiền đã chi trong năm 2023</td>
+                  <td>134.300.000đ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="col-12 h5 mt-5 d-flex justify-content-between">
+            <span>ĐƠN HÀNG GẦN ĐÂY</span>
+            <span class="fs-6 fw-semibold text-danger cursor-pointer" onclick="showContent('f-dhct')">Xem thêm
+              >>></span>
+          </div>
+          <div class="col-12 mt-2 overflow-x-auto">
+            <table class="table table-striped text-nowrap">
+              <thead>
+                <tr style="height: 30px;">
+                  <th class="align-middle text-center px-4">Đơn hàng</th>
+                  <th class="align-middle text-center px-4">Ngày</th>
+                  <th class="align-middle text-center px-4">Người nhận</th>
+                  <th class="align-middle text-center px-4">Thành tiền</th>
+                  <th class="align-middle text-center px-4">Trạng thái</th>
+                  <th class="align-middle text-center px-4">Hành động</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="height: 40px;">
+                  <td class="align-middle text-center">#HIU34D9</td>
+                  <td class="align-middle text-center">01/01/2003</td>
+                  <td class="align-middle text-center">Lê Thanh Bá</td>
+                  <td class="align-middle text-center">234.000đ</td>
+                  <td class="align-middle text-center">Đã giao</td>
+                  <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                      class="link-danger">Đặt lại</a></td>
+                </tr>
+                <tr style="height: 40px;">
+                  <td class="align-middle text-center">#HIU34D9</td>
+                  <td class="align-middle text-center">01/01/2003</td>
+                  <td class="align-middle text-center">Lê Thanh Bá</td>
+                  <td class="align-middle text-center">234.000đ</td>
+                  <td class="align-middle text-center">Đã giao</td>
+                  <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                      class="link-danger">Đặt lại</a></td>
+                </tr>
+                <tr style="height: 40px;">
+                  <td class="align-middle text-center">#HIU34D9</td>
+                  <td class="align-middle text-center">01/01/2003</td>
+                  <td class="align-middle text-center">Lê Thanh Bá</td>
+                  <td class="align-middle text-center">234.000đ</td>
+                  <td class="align-middle text-center">Đã giao</td>
+                  <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                      class="link-danger">Đặt lại</a></td>
+                </tr>
+                <tr style="height: 40px;">
+                  <td class="align-middle text-center">#HIU34D9</td>
+                  <td class="align-middle text-center">01/01/2003</td>
+                  <td class="align-middle text-center">Lê Thanh Bá</td>
+                  <td class="align-middle text-center">234.000đ</td>
+                  <td class="align-middle text-center">Đã giao</td>
+                  <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                      class="link-danger">Đặt lại</a></td>
+                </tr>
+                <tr style="height: 40px;">
+                  <td class="align-middle text-center">#HIU34D9</td>
+                  <td class="align-middle text-center">01/01/2003</td>
+                  <td class="align-middle text-center">Lê Thanh Bá</td>
+                  <td class="align-middle text-center">234.000đ</td>
+                  <td class="align-middle text-center">Đã giao</td>
+                  <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                      class="link-danger">Đặt lại</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="col-12 h5 mt-4 d-flex justify-content-between">
+            <span>SỔ ĐỊA CHỈ</span>
+            <span class="fs-6 fw-semibold text-danger cursor-pointer" onclick="showContent('f-sdc')">Xem thêm >>></span>
+          </div>
+          <div class="col-12 mt-2 overflow-x-auto">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th>Địa chỉ thanh toán mặc định</th>
+                  <th>Địa chỉ giao hàng mặc định</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lê Thanh Bá</td>
+                  <td>Lê Thanh Bá</td>
+                </tr>
+                <tr>
+                  <td>Lầu 99, số 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Thành phố Hồ Chí Minh</td>
+                  <td>Lầu 99, số 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Thành phố Hồ Chí Minh</td>
+                </tr>
+                <tr>
+                  <td>Stk: 9812457620893</td>
+                  <td>Giới tính: Nam</td>
+                </tr>
+                <tr>
+                  <td>Ngân hàng: MBank</td>
+                  <td>Số điện thoại: 01223526</td>
+                </tr>
+                <tr>
+                  <td><a href="#" class="link-danger">Sửa địa chỉ</a></td>
+                  <td><a href="#" class="link-danger">Sửa địa chỉ</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- THÔNG TIN TÀI KHOẢN -->
+      <div class="col-md-9 col-12 my-md-3 show-content d-none transition-opacity set-h" id="f-tttk">
+        <div class=" col-12 h4 pt-3 pb-3 ps-md-3 text-danger d-flex justify-content-between align-items-center m-0">
+          <span>THÔNG TIN TÀI KHOẢN</span>
+          <span id="sidebar-toggle" class="ms-2 py-1 px-2 rounded-2 position-relative bg-white" style="left: 0;"
+            onclick="showSidebar()"><i class="fa-brands fa-servicestack"></i></span>
+        </div>
+
+        <div class="col-12">
+          <div class="col-md-10 col-12 m-auto">
+            <form action="">
+              <div class="input-group py-2">
+                <label class="col-md-3 col-4" for="ho">Họ</label>
+                <div class="col-md-9 col-8">
+                  <input type="text" class="form-control" id="ho" name="ho" value="Lê Thanh">
+                </div>
+              </div>
+
+              <div class="input-group py-2">
+                <label class="col-md-3 col-4" for="ten">Tên</label>
+                <div class="col-md-9 col-8">
+                  <input type="text" class="form-control" id="ten" name="ten" value="Bá">
+                </div>
+              </div>
+
+              <div class="input-group py-2">
+                <label class="col-md-3 col-4" for="sdt">Số điện thoại</label>
+                <div class="col-md-9 col-8">
+                  <input type="tel" class="form-control" id="sdt" name="sdt" value="072136427183">
+                </div>
+              </div>
+
+              <div class="input-group py-2">
+                <label class="col-md-3 col-4" for="email">Email</label>
+                <div class="col-md-9 col-8">
+                  <input type="email" class="form-control" id="email" name="email" value="lethanhba0505@gmail.com">
+                </div>
+              </div>
+
+              <div class="input-group py-2">
+                <label class="col-md-3 col-4" for="gioitinh">Giới tính</label>
+                <div class="col-md-9 col-8">
+                  <select class="form-control" id="gioitinh" name="gioitinh">
+                    <option value="nam">Nam</option>
+                    <option value="nu">Nữ</option>
+                  </select>
+                </div>
+              </div>
+
+
+              <div class="input-group py-2">
+                <label class="col-md-3 col-4" for="ngaysinh">Ngày sinh</label>
+                <div class="col-md-9 col-8">
+                  <input type="date" class="form-control" id="ngaysinh" name="ngaysinh">
+                </div>
+              </div>
+
+              <div class="input-group py-2">
+                <label class="col-md-3 col-4" for="mavip">Mã VIP</label>
+                <div class="col-md-9 col-8">
+                  <input type="text" class="form-control" id="mavip" name="mavip">
+                </div>
+              </div>
+
+              <div class="input-group py-2">
+                <button type="submit" class="btn btn-primary m-auto">Lưu thay đổi</button>
+              </div>
+            </form>
+          </div>
+
+          <h5 class="pt-3">THÔNG TIN XUẤT HÓA ĐƠN GTGT</h5>
+          <div class="col-md-11 col-12 m-auto">
+            <form action="">
+              <div class="input-group py-2">
+                <label class="col-md-4 col-4" for="ho-ten">Họ tên người mua hàng</label>
+                <div class="col-md-8 col-8">
+                  <input type="text" class="form-control" id="ho-ten" name="ho-ten"
+                    placeholder="Nhập họ tên người mua hàng">
+                </div>
+              </div>
+              <div class="input-group py-2">
+                <label class="col-md-4 col-4" for="ten-cong-ty">Tên công ty</label>
+                <div class="col-md-8 col-8">
+                  <input type="text" class="form-control" id="ten-cong-ty" name="ten-cong-ty"
+                    placeholder="Nhập tên công ty">
+                </div>
+              </div>
+              <div class="input-group py-2">
+                <label class="col-md-4 col-4" for="dia-chi-cong-ty">Địa chỉ công ty</label>
+                <div class="col-md-8 col-8">
+                  <input type="text" class="form-control" id="dia-chi-cong-ty" name="dia-chi-cong-ty"
+                    placeholder="Nhập địa chỉ công ty">
+                </div>
+              </div>
+              <div class="input-group py-2">
+                <label class="col-md-4 col-4" for="maso-thue">Mã số thuế công ty</label>
+                <div class="col-md-8 col-8">
+                  <input type="text" class="form-control" id="maso-thue" name="maso-thue"
+                    placeholder="Nhập mã số thuế công ty">
+                </div>
+              </div>
+              <div class="input-group py-2">
+                <label class="col-md-4 col-4" for="email-nhan-hoa-don">Email nhận hóa đơn</label>
+                <div class="col-md-8 col-8">
+                  <input type="email" class="form-control" id="email-nhan-hoa-don" name="email-nhan-hoa-don"
+                    placeholder="Nhập Email nhận hóa đơn">
+                </div>
+              </div>
+              <div class="input-group py-2">
+                <button type="submit" class="btn btn-primary m-auto">Lưu thay đổi</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- SỔ ĐỊA CHỈ -->
+      <div class="col-md-9 col-12 my-md-3 show-content d-none transition-opacity set-h" id="f-sdc">
+        <div class=" col-12 h4 pt-3 pb-3 ps-md-3 text-danger d-flex justify-content-between align-items-center m-0">
+          <span>SỔ ĐỊA CHỈ</span>
+          <span id="sidebar-toggle" class="ms-2 py-1 px-2 rounded-2 position-relative bg-white" style="left: 0;"
+            onclick="showSidebar()"><i class="fa-brands fa-servicestack"></i></span>
+        </div>
+
+        <div class="col-12" style="text-align: justify;">
+          <div class="col-12 mt-2 overflow-x-auto">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th>Địa chỉ thanh toán mặc định</th>
+                  <th>Địa chỉ giao hàng mặc định</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lê Thanh Bá</td>
+                  <td>Lê Thanh Bá</td>
+                </tr>
+                <tr>
+                  <td>Lầu 99, số 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Thành phố Hồ Chí Minh</td>
+                  <td>Lầu 99, số 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Thành phố Hồ Chí Minh</td>
+                </tr>
+                <tr>
+                  <td>Stk: 9812457620893</td>
+                  <td>Giới tính: Nam</td>
+                </tr>
+                <tr>
+                  <td>Ngân hàng: MBank</td>
+                  <td>Số điện thoại: 01223526</td>
+                </tr>
+                <tr>
+                  <td><a href="#" class="link-danger">Sửa địa chỉ</a><br><a href="#" class="link-danger">Xóa địa chỉ</a>
+                  </td>
+                  </td>
+                  <td><a href="#" class="link-danger">Sửa địa chỉ</a><br><a href="#" class="link-danger">Xóa địa chỉ</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- ĐƠN HÀNG CỦA TÔI -->
+      <div class="col-md-9 col-12 my-md-3 show-content d-none transition-opacity set-h" id="f-dhct">
+        <div class=" col-12 h4 pt-3 pb-3 ps-md-3 text-danger d-flex justify-content-between align-items-center m-0">
+          <span>ĐƠN HÀNG CỦA TÔI</span>
+          <span id="sidebar-toggle" class="ms-2 py-1 px-2 rounded-2 position-relative bg-white" style="left: 0;"
+            onclick="showSidebar()"><i class="fa-brands fa-servicestack"></i></span>
+        </div>
+
+        <div class="col-12 mt-2" style="text-align: justify;">
+          <div class="slide-menu-card px-3">
+
+            <div class="h-100 text-danger">
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">11</div>
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">Tất Cả</div>
+            </div>
+
+            <div class="h-100 ">
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">11</div>
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">Chờ thanh toán</div>
+            </div>
+
+            <div class="h-100 ">
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">36</div>
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">Chờ xác nhận</div>
+            </div>
+
+            <div class="h-100 ">
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">3</div>
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">Đang xử lý</div>
+            </div>
+
+            <div class="h-100 ">
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">8</div>
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">Hoàn tất</div>
+            </div>
+
+            <div class="h-100 ">
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">13</div>
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">Đã hủy</div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-12 mt-3 overflow-x-auto">
+          <table class="table table-striped text-nowrap">
+            <thead>
+              <tr style="height: 30px;">
+                <th class="align-middle text-center px-4">Đơn hàng</th>
+                <th class="align-middle text-center px-4">Ngày</th>
+                <th class="align-middle text-center px-4">Người nhận</th>
+                <th class="align-middle text-center px-4">Thành tiền</th>
+                <th class="align-middle text-center px-4">Trạng thái</th>
+                <th class="align-middle text-center px-4">Hành động</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="height: 40px;">
+                <td class="align-middle text-center">#HIU34D9</td>
+                <td class="align-middle text-center">01/01/2003</td>
+                <td class="align-middle text-center">Lê Thanh Bá</td>
+                <td class="align-middle text-center">234.000đ</td>
+                <td class="align-middle text-center">Đã giao</td>
+                <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                    class="link-danger">Đặt lại</a></td>
+              </tr>
+              <tr style="height: 40px;">
+                <td class="align-middle text-center">#HIU34D9</td>
+                <td class="align-middle text-center">01/01/2003</td>
+                <td class="align-middle text-center">Lê Thanh Bá</td>
+                <td class="align-middle text-center">234.000đ</td>
+                <td class="align-middle text-center">Đã giao</td>
+                <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                    class="link-danger">Đặt lại</a></td>
+              </tr>
+              <tr style="height: 40px;">
+                <td class="align-middle text-center">#HIU34D9</td>
+                <td class="align-middle text-center">01/01/2003</td>
+                <td class="align-middle text-center">Lê Thanh Bá</td>
+                <td class="align-middle text-center">234.000đ</td>
+                <td class="align-middle text-center">Đã giao</td>
+                <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                    class="link-danger">Đặt lại</a></td>
+              </tr>
+              <tr style="height: 40px;">
+                <td class="align-middle text-center">#HIU34D9</td>
+                <td class="align-middle text-center">01/01/2003</td>
+                <td class="align-middle text-center">Lê Thanh Bá</td>
+                <td class="align-middle text-center">234.000đ</td>
+                <td class="align-middle text-center">Đã giao</td>
+                <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                    class="link-danger">Đặt lại</a></td>
+              </tr>
+              <tr style="height: 40px;">
+                <td class="align-middle text-center">#HIU34D9</td>
+                <td class="align-middle text-center">01/01/2003</td>
+                <td class="align-middle text-center">Lê Thanh Bá</td>
+                <td class="align-middle text-center">234.000đ</td>
+                <td class="align-middle text-center">Đã giao</td>
+                <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                    class="link-danger">Đặt lại</a></td>
+              </tr>
+              <tr style="height: 40px;">
+                <td class="align-middle text-center">#HIU34D9</td>
+                <td class="align-middle text-center">01/01/2003</td>
+                <td class="align-middle text-center">Lê Thanh Bá</td>
+                <td class="align-middle text-center">234.000đ</td>
+                <td class="align-middle text-center">Đã giao</td>
+                <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                    class="link-danger">Đặt lại</a></td>
+              </tr>
+              <tr style="height: 40px;">
+                <td class="align-middle text-center">#HIU34D9</td>
+                <td class="align-middle text-center">01/01/2003</td>
+                <td class="align-middle text-center">Lê Thanh Bá</td>
+                <td class="align-middle text-center">234.000đ</td>
+                <td class="align-middle text-center">Đã giao</td>
+                <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                    class="link-danger">Đặt lại</a></td>
+              </tr>
+              <tr style="height: 40px;">
+                <td class="align-middle text-center">#HIU34D9</td>
+                <td class="align-middle text-center">01/01/2003</td>
+                <td class="align-middle text-center">Lê Thanh Bá</td>
+                <td class="align-middle text-center">234.000đ</td>
+                <td class="align-middle text-center">Đã giao</td>
+                <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                    class="link-danger">Đặt lại</a></td>
+              </tr>
+              <tr style="height: 40px;">
+                <td class="align-middle text-center">#HIU34D9</td>
+                <td class="align-middle text-center">01/01/2003</td>
+                <td class="align-middle text-center">Lê Thanh Bá</td>
+                <td class="align-middle text-center">234.000đ</td>
+                <td class="align-middle text-center">Đã giao</td>
+                <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                    class="link-danger">Đặt lại</a></td>
+              </tr>
+              <tr style="height: 40px;">
+                <td class="align-middle text-center">#HIU34D9</td>
+                <td class="align-middle text-center">01/01/2003</td>
+                <td class="align-middle text-center">Lê Thanh Bá</td>
+                <td class="align-middle text-center">234.000đ</td>
+                <td class="align-middle text-center">Đã giao</td>
+                <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                    class="link-danger">Đặt lại</a></td>
+              </tr>
+              <tr style="height: 40px;">
+                <td class="align-middle text-center">#HIU34D9</td>
+                <td class="align-middle text-center">01/01/2003</td>
+                <td class="align-middle text-center">Lê Thanh Bá</td>
+                <td class="align-middle text-center">234.000đ</td>
+                <td class="align-middle text-center">Đã giao</td>
+                <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                    class="link-danger">Đặt lại</a></td>
+              </tr>
+              <tr style="height: 40px;">
+                <td class="align-middle text-center">#HIU34D9</td>
+                <td class="align-middle text-center">01/01/2003</td>
+                <td class="align-middle text-center">Lê Thanh Bá</td>
+                <td class="align-middle text-center">234.000đ</td>
+                <td class="align-middle text-center">Đã giao</td>
+                <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                    class="link-danger">Đặt lại</a></td>
+              </tr>
+              <tr style="height: 40px;">
+                <td class="align-middle text-center">#HIU34D9</td>
+                <td class="align-middle text-center">01/01/2003</td>
+                <td class="align-middle text-center">Lê Thanh Bá</td>
+                <td class="align-middle text-center">234.000đ</td>
+                <td class="align-middle text-center">Đã giao</td>
+                <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                    class="link-danger">Đặt lại</a></td>
+              </tr>
+              <tr style="height: 40px;">
+                <td class="align-middle text-center">#HIU34D9</td>
+                <td class="align-middle text-center">01/01/2003</td>
+                <td class="align-middle text-center">Lê Thanh Bá</td>
+                <td class="align-middle text-center">234.000đ</td>
+                <td class="align-middle text-center">Đã giao</td>
+                <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                    class="link-danger">Đặt lại</a></td>
+              </tr>
+              <tr style="height: 40px;">
+                <td class="align-middle text-center">#HIU34D9</td>
+                <td class="align-middle text-center">01/01/2003</td>
+                <td class="align-middle text-center">Lê Thanh Bá</td>
+                <td class="align-middle text-center">234.000đ</td>
+                <td class="align-middle text-center">Đã giao</td>
+                <td class="align-middle text-center"><a href="#" class="link-danger">Chi tiết</a> / <a href="#"
+                    class="link-danger">Đặt lại</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- VÍ VOUCHER -->
+      <div class="col-md-9 col-12 my-md-3 show-content d-none transition-opacity set-h" id="f-vv">
+        <div class=" col-12 h4 pt-3 pb-3 ps-md-3 text-danger d-flex justify-content-between align-items-center m-0">
+          <span>VÍ VOUCHER</span>
+          <span id="sidebar-toggle" class="ms-2 py-1 px-2 rounded-2 position-relative bg-white" style="left: 0;"
+            onclick="showSidebar()"><i class="fa-brands fa-servicestack"></i></span>
+        </div>
+
+        <div class="col-12 mt-2" style="text-align: justify;">
+          <div class="col-12 mt-2" style="text-align: justify;">
+            <div class="slide-menu-card px-3">
+
+              <div class="h-100 text-danger">
+                <div style="width: 90%;"
+                  class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">81</div>
+                <div style="width: 90%;"
+                  class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">Tất cả
+                </div>
+              </div>
+
+              <div class="h-100">
+                <div style="width: 90%;"
+                  class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">36</div>
+                <div style="width: 90%;"
+                  class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">Shop
+                </div>
+              </div>
+
+              <div class="h-100 text-danger">
+                <div style="width: 90%;"
+                  class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">81</div>
+                <div style="width: 90%;"
+                  class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">Dịch vụ
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 mt-2" style="text-align: justify;">
+            <div class="row">
+              <div class="col-12 px-4 mt-3">
+                <div class="card mb-3 rounded-4 overflow-hidden">
+                  <div class="row">
+                    <div class="col-3 bg-danger d-flex justify-content-center align-items-center">
+                      <img src="../IMG/ico_coupongreen.svg" class="img-fluid" alt="..." style="margin: 0!important;">
+                    </div>
+                    <div class="col-9 row">
+                      <div class="col-md-9 col-12 card-body p-md-3 py-2">
+                        <div class="card-title h5-md h6">Mã giảm 50k</div>
+                        <div class="card-text fs-md-6 fs-7">Giảm Toàn Sàn dành cho đơn hàng trên 1 triệu</div>
+                        <div class="card-text fs-md-6 fs-7">Mã voucher: LO50KT10</div>
+                        <div class="card-text fs-md-6 fs-7">Hạn sử dụng: 1/1/1024</div>
+                      </div>
+                      <div class="col-md-3 col-12 d-flex align-items-center justify-content-end">
+                        <button class="btn btn-primary fs-md-6 fs-7 m-md-0 mb-2">Copy mã</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 px-4 mt-3">
+                <div class="card mb-3 rounded-4 overflow-hidden">
+                  <div class="row">
+                    <div class="col-3 bg-danger d-flex justify-content-center align-items-center">
+                      <img src="../IMG/ico_coupongreen.svg" class="img-fluid" alt="..." style="margin: 0!important;">
+                    </div>
+                    <div class="col-9 row">
+                      <div class="col-md-9 col-12 card-body p-md-3 py-2">
+                        <div class="card-title h5-md h6">Mã giảm 50k</div>
+                        <div class="card-text fs-md-6 fs-7">Giảm Toàn Sàn dành cho đơn hàng trên 1 triệu</div>
+                        <div class="card-text fs-md-6 fs-7">Mã voucher: LO50KT10</div>
+                        <div class="card-text fs-md-6 fs-7">Hạn sử dụng: 1/1/1024</div>
+                      </div>
+                      <div class="col-md-3 col-12 d-flex align-items-center justify-content-end">
+                        <button class="btn btn-primary fs-md-6 fs-7 m-md-0 mb-2">Copy mã</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 px-4 mt-3">
+                <div class="card mb-3 rounded-4 overflow-hidden">
+                  <div class="row">
+                    <div class="col-3 bg-danger d-flex justify-content-center align-items-center">
+                      <img src="../IMG/ico_coupongreen.svg" class="img-fluid" alt="..." style="margin: 0!important;">
+                    </div>
+                    <div class="col-9 row">
+                      <div class="col-md-9 col-12 card-body p-md-3 py-2">
+                        <div class="card-title h5-md h6">Mã giảm 50k</div>
+                        <div class="card-text fs-md-6 fs-7">Giảm Toàn Sàn dành cho đơn hàng trên 1 triệu</div>
+                        <div class="card-text fs-md-6 fs-7">Mã voucher: LO50KT10</div>
+                        <div class="card-text fs-md-6 fs-7">Hạn sử dụng: 1/1/1024</div>
+                      </div>
+                      <div class="col-md-3 col-12 d-flex align-items-center justify-content-end">
+                        <button class="btn btn-primary fs-md-6 fs-7 m-md-0 mb-2">Copy mã</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 px-4 mt-3">
+                <div class="card mb-3 rounded-4 overflow-hidden">
+                  <div class="row">
+                    <div class="col-3 bg-danger d-flex justify-content-center align-items-center">
+                      <img src="../IMG/ico_coupongreen.svg" class="img-fluid" alt="..." style="margin: 0!important;">
+                    </div>
+                    <div class="col-9 row">
+                      <div class="col-md-9 col-12 card-body p-md-3 py-2">
+                        <div class="card-title h5-md h6">Mã giảm 50k</div>
+                        <div class="card-text fs-md-6 fs-7">Giảm Toàn Sàn dành cho đơn hàng trên 1 triệu</div>
+                        <div class="card-text fs-md-6 fs-7">Mã voucher: LO50KT10</div>
+                        <div class="card-text fs-md-6 fs-7">Hạn sử dụng: 1/1/1024</div>
+                      </div>
+                      <div class="col-md-3 col-12 d-flex align-items-center justify-content-end">
+                        <button class="btn btn-primary fs-md-6 fs-7 m-md-0 mb-2">Copy mã</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TÀI KHOẢN LO-POINT -->
+      <div class="col-md-9 col-12 my-md-3 show-content d-none transition-opacity set-h" id="f-tkl">
+        <div class=" col-12 h4 pt-3 pb-3 ps-md-3 text-danger d-flex justify-content-between align-items-center m-0">
+          <span>TÀI KHOẢN L-POINT</span>
+          <span id="sidebar-toggle" class="ms-2 py-1 px-2 rounded-2 position-relative bg-white" style="left: 0;"
+            onclick="showSidebar()"><i class="fa-brands fa-servicestack"></i></span>
+        </div>
+
+        <div class="col-12 mt-2" style="text-align: justify;">
+          <form class="px-md-4 border-bottom border-2 pb-2">
+            <div class="mb-3 row">
+              <label for="l-point" class="col-md-4 col-12 col-form-label">Nạp điểm L-Point/Freeship</label>
+              <div class="col-md-6 col-9">
+                <input type="text" class="form-control" id="l-point" placeholder="Nhập mã của bạn...">
+              </div>
+              <div class="col-md-2 col-3 ps-0">
+                <button class="btn btn-primary w-100">Nhập</button>
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="soDuTaiKhoan" class="col-md-4 col-12 col-form-label">Số dư tài khoản</label>
+              <div class="col-md-8 col-12">
+                <input type="text" readonly class="form-control px-3 input-focus-none border" id="soDuTaiKhoan"
+                  value="12.034đ">
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-12 mt-3 overflow-x-auto">
+          <h5>LỊCH SỬ GIAO DỊCH</h5>
+          <table class="table table-striped text-nowrap">
+            <colgroup>
+              <col width="1">
+              <col width="1">
+              <col width="1">
+              <col width="1">
+              <col width="1">
+              <col width="1">
+              <col width="1">
+            </colgroup>
+            <thead>
+              <tr class="first last">
+                <th>#</th>
+                <th>Hành động</th>
+                <th>Thời gian</th>
+                <th>Đơn hàng</th>
+                <th>Số dư trước</th>
+                <th>Giá trị giao dịch fpoint</th>
+                <th>Số dư sau</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>upgrade level</td>
+                <td>16-01-2023 15:08:08</td>
+                <td>
+                </td>
+                <td>0</td>
+                <td>
+                  0 </td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Tích điểm Point</td>
+                <td>22-05-2022 07:30:43</td>
+                <td>
+                  <a href="#">
+                    30601775_401014301 </a>
+                </td>
+                <td>758</td>
+                <td>
+                  + 400 </td>
+                <td>1.158</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Tích điểm Point</td>
+                <td>23-04-2022 07:30:51</td>
+                <td>
+                  <a href="#">
+                    30375270_400978442 </a>
+                </td>
+                <td>497</td>
+                <td>
+                  + 261 </td>
+                <td>758</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Tích điểm Point</td>
+                <td>21-04-2022 07:30:40</td>
+                <td>
+                  <a href="#">
+                    30336564_400978442 </a>
+                </td>
+                <td>0</td>
+                <td>
+                  + 497 </td>
+                <td>497</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Thanh toán bằng điểm F-Point</td>
+                <td>16-04-2022 17:23:18</td>
+                <td>
+                  <a href="#">
+                    400978442 </a>
+                </td>
+                <td>11.600</td>
+                <td>
+                  -11.600 </td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Hoàn trả điểm cho đơn hàng hủy</td>
+                <td>16-04-2022 17:10:12</td>
+                <td>
+                  <a href="#">
+                    400978269 </a>
+                </td>
+                <td>0</td>
+                <td>
+                  + 11.600 </td>
+                <td>11.600</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Thanh toán bằng điểm F-Point</td>
+                <td>16-04-2022 15:48:21</td>
+                <td>
+                  <a href="#">
+                    400978269 </a>
+                </td>
+                <td>11.600</td>
+                <td>
+                  -11.600 </td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Tích điểm Point</td>
+                <td>30-03-2022 07:31:31</td>
+                <td>
+                  <a href="#">
+                    30172481_102448151 </a>
+                </td>
+                <td>10.400</td>
+                <td>
+                  + 1.200 </td>
+                <td>11.600</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Tích điểm Point</td>
+                <td>26-03-2022 07:35:16</td>
+                <td>
+                  <a href="#">
+                    30148461_102452442 </a>
+                </td>
+                <td>10.000</td>
+                <td>
+                  + 400 </td>
+                <td>10.400</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Nạp Fpoint</td>
+                <td>26-03-2022 06:02:52</td>
+                <td>
+                  <a href="#">
+                    102452442 </a>
+                </td>
+                <td>0</td>
+                <td>
+                  + 10.000 </td>
+                <td>10.000</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Thanh toán bằng điểm F-Point</td>
+                <td>17-03-2022 14:41:16</td>
+                <td>
+                  <a href="#">
+                    102448151 </a>
+                </td>
+                <td>6.318</td>
+                <td>
+                  -6.318 </td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Tích điểm Point</td>
+                <td>04-03-2022 09:52:50</td>
+                <td>
+                  <a href="#">
+                    29918093_102428977 </a>
+                </td>
+                <td>6.068</td>
+                <td>
+                  + 250 </td>
+                <td>6.318</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>Nạp Fpoint</td>
+                <td>04-03-2022 05:52:38</td>
+                <td>
+                  <a href="#">
+                    102428977 </a>
+                </td>
+                <td>1.068</td>
+                <td>
+                  + 5.000 </td>
+                <td>6.068</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>Tích điểm Point</td>
+                <td>03-03-2022 08:31:22</td>
+                <td>
+                  <a href="#">
+                    29891014_102419656 </a>
+                </td>
+                <td>0</td>
+                <td>
+                  + 1.068 </td>
+                <td>1.068</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>Thanh toán bằng Freeship</td>
+                <td>03-03-2022 08:04:33</td>
+                <td>
+                  <a href="#">
+                    102428977 </a>
+                </td>
+                <td>1</td>
+                <td>
+                  -1 </td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>Nạp Freeship</td>
+                <td>03-03-2022 05:50:29</td>
+                <td>
+                  <a href="#">
+                    102419656 </a>
+                </td>
+                <td>0</td>
+                <td>
+                  + 1 </td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- THÔNG BÁO -->
+      <div class="col-md-9 col-12 my-md-3 show-content d-none transition-opacity set-h" id="f-tb">
+        <div class=" col-12 h4 pt-3 pb-3 ps-md-3 text-danger d-flex justify-content-between align-items-center m-0">
+          <span>Thông báo</span>
+          <span id="sidebar-toggle" class="ms-2 py-1 px-2 rounded-2 position-relative bg-white" style="left: 0;"
+            onclick="showSidebar()"><i class="fa-brands fa-servicestack"></i></span>
+        </div>
+
+        <div class="col-12 mt-2" style="text-align: justify;">
+          <div class="slide-menu-card px-3">
+
+            <div class="h-100 text-danger">
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">999+</div>
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">Tất Cả</div>
+            </div>
+
+            <div class="h-100 ">
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">378</div>
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">Đơn hàng</div>
+            </div>
+
+            <div class="h-100 ">
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">345</div>
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">Sự kiện</div>
+            </div>
+
+            <div class="h-100 ">
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">599</div>
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">Mã giảm giá</div>
+            </div>
+
+            <div class="h-100 ">
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">35</div>
+              <div style="width: 90%;"
+                class="fs-6 text-center h6-md h5 m-0 pb-2 border-start border-end border-2 m-auto">Xác nhận</div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-12 mt-4 px-md-4 px-2" style="text-align: justify;">
+          <a href="" class="row d-block text-black rounded-3 bg-body-secondary py-2 mt-2">
+            <div class="col-12 d-flex justify-content-between">
+              <p class="m-0">Tặng bạn ưu đãi giảm 20k</p>
+              <p class="m-0">12:34 01/01/2024</p>
+            </div>
+            <div class="col-12">
+              <p class="m-0">Rinh ngay sản phẩm chính hãng</p>
+            </div>
+          </a>
+          <a href="" class="row d-block text-black rounded-3 bg-body-secondary py-2 mt-2">
+            <div class="col-12 d-flex justify-content-between">
+              <p class="m-0">Tặng bạn ưu đãi giảm 20k</p>
+              <p class="m-0">12:34 01/01/2024</p>
+            </div>
+            <div class="col-12">
+              <p class="m-0">Rinh ngay sản phẩm chính hãng</p>
+            </div>
+          </a>
+          <a href="" class="row d-block text-black rounded-3 bg-body-secondary py-2 mt-2">
+            <div class="col-12 d-flex justify-content-between">
+              <p class="m-0">Tặng bạn ưu đãi giảm 20k</p>
+              <p class="m-0">12:34 01/01/2024</p>
+            </div>
+            <div class="col-12">
+              <p class="m-0">Rinh ngay sản phẩm chính hãng</p>
+            </div>
+          </a>
+          <a href="" class="row d-block text-black rounded-3 bg-body-secondary py-2 mt-2">
+            <div class="col-12 d-flex justify-content-between">
+              <p class="m-0">Tặng bạn ưu đãi giảm 20k</p>
+              <p class="m-0">12:34 01/01/2024</p>
+            </div>
+            <div class="col-12">
+              <p class="m-0">Rinh ngay sản phẩm chính hãng</p>
+            </div>
+          </a>
+          <a href="" class="row d-block text-black rounded-3 bg-body-secondary py-2 mt-2">
+            <div class="col-12 d-flex justify-content-between">
+              <p class="m-0">Tặng bạn ưu đãi giảm 20k</p>
+              <p class="m-0">12:34 01/01/2024</p>
+            </div>
+            <div class="col-12">
+              <p class="m-0">Rinh ngay sản phẩm chính hãng</p>
+            </div>
+          </a>
+          <a href="" class="row d-block text-black rounded-3 bg-body-secondary py-2 mt-2">
+            <div class="col-12 d-flex justify-content-between">
+              <p class="m-0">Tặng bạn ưu đãi giảm 20k</p>
+              <p class="m-0">12:34 01/01/2024</p>
+            </div>
+            <div class="col-12">
+              <p class="m-0">Rinh ngay sản phẩm chính hãng</p>
+            </div>
+          </a>
+          <a href="" class="row d-block text-black rounded-3 bg-body-secondary py-2 mt-2">
+            <div class="col-12 d-flex justify-content-between">
+              <p class="m-0">Tặng bạn ưu đãi giảm 20k</p>
+              <p class="m-0">12:34 01/01/2024</p>
+            </div>
+            <div class="col-12">
+              <p class="m-0">Rinh ngay sản phẩm chính hãng</p>
+            </div>
+          </a>
+          <a href="" class="row d-block text-black rounded-3 bg-body-secondary py-2 mt-2">
+            <div class="col-12 d-flex justify-content-between">
+              <p class="m-0">Tặng bạn ưu đãi giảm 20k</p>
+              <p class="m-0">12:34 01/01/2024</p>
+            </div>
+            <div class="col-12">
+              <p class="m-0">Rinh ngay sản phẩm chính hãng</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="row bg-white pt-3">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center m-0 py-1">
+              <li class="page-item disabled">
+                <a class="page-link text-danger" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link text-danger" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link text-danger" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link text-danger" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link text-danger" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer"></footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <!-- <script src="../JS/index.js"></script> -->
+
+  <script src="../JS/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    btnGo();
+    slideScroll();
+    nhanBien_taikhoan();
+  </script>
+</body>
+</html>

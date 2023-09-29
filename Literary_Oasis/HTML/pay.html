@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+
+  <title>Document</title>
+</head>
+<body class="body transition-opacity opacity-0 bg-maunhat overflow-x-hidden">
+
+  <!-- HEADER -->
+  <header class="header bg-header text-white pb-3 pt-md-3 pt-2" id="header"></header>
+
+  <!-- BODY -->
+  <div class="container mt-4" id="container">
+    <div class="row bg-white">
+      <div class="col-12">
+        <h4 class="p-3 m-0 text-danger">THÔNG TIN ĐẶT HÀNG</h4>
+      </div>
+    </div>
+
+    <form class="row bg-white pb-3">
+      <div class="d-flex align-items-center pb-3 ps-md-4 ps-3 pb-md-1 py-2">
+        <i class="fa-solid fa-location-dot"></i>
+        <span class="ms-2 text-nowrap h5 mb-0">ĐỊA CHỈ GIAO HÀNG</span>
+      </div>
+
+      <div class="col-12 px-md-5 mt-md-2 mt-1">
+        <div class="d-flex align-items-center">
+          <input type="radio" name="diachi" id="dhcn1" value="dhcn1">
+          <label class="form-label mb-1 ms-2" for="dhcn1">Lầu 99, số 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Thành phố
+            Hồ Chí
+            Minh</label>
+          <p class="col text-end text-danger"><a href="#" class=" text-danger">Sửa</a>/<a href="#"
+              class=" text-danger">Xóa</a></p>
+        </div>
+        <div class="d-flex align-items-center">
+          <input type="radio" name="diachi" id="dhcn2" value="dhcn2">
+          <label class="form-label mb-1 ms-2" for="dhcn2">Lầu 99, số 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Thành phố
+            Hồ Chí
+            Minh</label>
+          <p class="col text-end text-danger"><a href="#" class=" text-danger">Sửa</a>/<a href="#"
+              class=" text-danger">Xóa</a></p>
+        </div>
+        <div class="d-flex align-items-center">
+          <input type="radio" name="diachi" id="dhcn3" value="dhcn3">
+          <label class="form-label mb-1 ms-2" for="dhcn3">Lầu 99, số 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Thành phố
+            Hồ Chí
+            Minh</label>
+          <p class="col text-end text-danger"><a href="#" class=" text-danger">Sửa</a>/<a href="#"
+              class=" text-danger">Xóa</a></p>
+        </div>
+
+        <a href="#" class="d-flex align-items-baseline text-danger mt-1">
+          <i class="fa-solid fa-circle-plus"></i>
+          <div class="fs-6 ms-2">Giao hàng đến địa chỉ khác</div>
+        </a>
+      </div>
+
+      <div class="d-flex align-items-center pb-3 pt-4 ps-md-4 ps-3 pb-md-1 py-2">
+        <i class="fa-solid fa-truck-moving"></i>
+        <span class="ms-2 text-nowrap h5 mb-0">PHƯƠNG THỨC VẬN CHUYỂN</span>
+      </div>
+      <div class="col-12 px-md-5 mt-md-2 mt-1">
+        <div class="d-flex align-items-center">
+          <input type="radio" name="ptvc" id="ghtk" value="ghtk">
+          <label class="form-label mb-1 ms-2" for="ghtk">Giao hàng tiết kiệm: 4.000đ (7-10 ngày)</label>
+        </div>
+        <div class="d-flex align-items-center">
+          <input type="radio" name="ptvc" id="ghtc" value="ghtc">
+          <label class="form-label mb-1 ms-2" for="ghtc">Giao hàng tiêu chuẩn: 19.000đ (3-5 ngày)</label>
+        </div>
+        <div class="d-flex align-items-center">
+          <input type="radio" name="ptvc" id="ghn" value="ghn">
+          <label class="form-label mb-1 ms-2" for="ghn">Giao hàng nhanh: 36.000đ (1-2 ngày)</label>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center pb-3 pt-4 ps-md-4 ps-3 pb-md-1 py-2">
+        <i class="fa-solid fa-credit-card"></i>
+        <span class="ms-2 text-nowrap h5 mb-0">PHƯƠNG THỨC THANH TOÁN</span>
+      </div>
+      <div class="col-12 px-md-5 mt-md-2 mt-1">
+        <div class="d-flex align-items-start">
+          <input type="radio" name="pttt" value="zalopay" id="zalopay" class="mt-2">
+          <div class="ms-3">
+            <img src="../IMG/ico_zalopayapp.svg" alt="">
+          </div>
+          <label class="form-label mb-1 ms-3" for="zalopay">Ví Zalopay <br>(Thanh toán bằng Zalopay, giảm ngay 45K cho
+            đơn hàng mua sách "BEYOND THE STORY 10-YEAR RECOND OF BTS" - Bản tiếng Việt)</label>
+        </div>
+        <div class="d-flex align-items-start mt-2">
+          <input type="radio" name="pttt" value="moca" id="moca" class="mt-2">
+          <div class="ms-3">
+            <img src="../IMG/ico_mocapay.svg" alt="">
+          </div>
+          <label class="form-label mb-1 ms-3" for="moca">Ví Moca trên ứng dụng Grap</label>
+        </div>
+        <div class="d-flex align-items-start mt-2">
+          <input type="radio" name="pttt" value="vnpay" id="vnpay" class="mt-2">
+          <div class="ms-3">
+            <img src="../IMG/ico_vnpay.svg" alt="">
+          </div>
+          <label class="form-label mb-1 ms-3" for="vnpay">VNPAY <br>Nhập mã "QRFHST9": Giảm 10K cho đơn hàng từ 150K và
+            giảm 20K cho đơn hàng từ 250K - Nhập mã tại VNPAY</label>
+        </div>
+        <div class="d-flex align-items-start mt-2">
+          <input type="radio" name="pttt" value="shopeepay" id="shopeepay" class="mt-2">
+          <div class="ms-3">
+            <img src="../IMG/ico_airpay.svg" alt="">
+          </div>
+          <label class="form-label mb-1 ms-3" for="shopeepay">Ví ShopeePay</label>
+        </div>
+        <div class="d-flex align-items-start mt-2">
+          <input type="radio" name="pttt" value="momo" id="momo" class="mt-2">
+          <div class="ms-3">
+            <img src="../IMG/ico_momopay.svg" alt="">
+          </div>
+          <label class="form-label mb-1 ms-3" for="momo">Ví Momo</label>
+        </div>
+        <div class="d-flex align-items-start mt-2">
+          <input type="radio" name="pttt" value="atm" id="atm" class="mt-2">
+          <div class="ms-3">
+            <img src="../IMG/ico_zalopayatm.svg" alt="">
+          </div>
+          <label class="form-label mb-1 ms-3" for="atm">ATM / Internet Banking</label>
+        </div>
+        <div class="d-flex align-items-start mt-2">
+          <input type="radio" name="pttt" value="zalopaycc" id="zalopaycc" class="mt-2">
+          <div class="ms-3">
+            <img src="../IMG/ico_zalopaycc.svg" alt="">
+          </div>
+          <label class="form-label mb-1 ms-3" for="zalopaycc">Visa / Master / JBC</label>
+        </div>
+        <div class="d-flex align-items-start mt-2">
+          <input type="radio" name="pttt" value="cashondelivery" id="cashondelivery" class="mt-2">
+          <div class="ms-3">
+            <img src="../IMG/ico_cashondelivery.svg" alt="">
+          </div>
+          <label class="form-label mb-1 ms-3" for="cashondelivery">Thanh toán bằng tiền mặt khi nhận hàng</label>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center pb-3 pt-4 ps-md-4 ps-3 pb-md-1 py-2">
+        <i class="fa-solid fa-users"></i>
+        <span class="ms-2 text-nowrap h5 mb-0">THÀNH VIÊN LITERARY</span>
+      </div>
+      <div class="col-12 px-md-5 mt-md-2 mt-1">
+        <div class="d-flex align-items-baseline">
+          <input type="checkbox" name="tvlo" id="lpoint" value="lpoint">
+          <label class="form-label ms-2" for="l-point">Sử dụng L-Point để thanh toán </label>
+          <div class="text-danger fw-bold ms-md-2 ms-1">(Hiện có 21.934đ L-Point)</div>
+        </div>
+        <div class="d-flex align-items-baseline">
+          <input type="checkbox" name="tvlo" id="freeship" value="freeship">
+          <label class="form-label ms-2" for="freeship">Sử dụng mã freeship</label>
+          <div class="text-danger fw-bold ms-md-2 ms-1">(Hiện có 3 mã freeship)</div>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center pb-3 pt-4 ps-md-4 ps-3 pb-md-1 py-2">
+        <i class="fa-solid fa-percent"></i>
+        <span class="ms-2 text-nowrap h5 mb-0">MÃ KHUYẾN MÃI / QUÀ TẶNG</span>
+      </div>
+      <div class="col-12 px-md-5 mt-md-2 mt-1">
+        <div class="d-flex align-items-center col-md-8 col-12">
+          <label class="form-label me-3" for="makmqt">Nhập mã Khuyến mãi / Quà tặng</label>
+          <input type="text" name="makmqt" id="makmqt" class="form-control">
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center pb-3 pt-4 ps-md-4 ps-3 pb-md-1 py-2">
+        <i class="fa-solid fa-circle-info"></i>
+        <span class="ms-2 text-nowrap h5 mb-0">THÔNG TIN KHÁC</span>
+      </div>
+      <div class="col-12 px-md-5 mt-md-2 mt-1">
+        <div class="d-flex align-items-baseline">
+          <input type="checkbox" name="ttk" id="ghichu" value="ghichu">
+          <label class="form-label ms-2" for="ghichu">Ghi chú</label>
+        </div>
+        <div class="d-flex align-items-baseline">
+          <input type="checkbox" name="ttk" id="gtgt" value="gtgt">
+          <label class="form-label ms-2" for="gtgt">Xuất hóa đơn GTGT <br>Từ ngày 01/11/2020, Công ty Literary Oasis
+            không giải quyết việc xuất lại hóa đơn cho các trường hợp Quý khách không đăng ký thông tin</label>
+        </div>
+        <div class="d-flex align-items-baseline">
+          <input type="checkbox" name="ttk" id="dkgdc" checked disabled value="dkgdc">
+          <label class="form-label ms-2" for="dkgdc">Bằng việc tiến hành Đặt Mua, khách hàng đồng ý với các Điều Kiện
+            Giao Dịch Chung được ban hành bởi Literary Oasis </label>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center pb-3 pt-4 ps-md-4 ps-3 pb-md-1 py-2">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="ms-2 text-nowrap h5 mb-0">KIỂM TRA LẠI ĐƠN HÀNG</span>
+      </div>
+      <div class="col-12 px-md-5 mt-md-2 mt-1 pt-2">
+        <div class="input-group mb-3 px-md-3">
+          <div class="input-group-text w-100 text-wrap flex-wrap">
+            <div class="col-1">
+              <input class="form-check-input mt-0 border-2" type="checkbox" name="ktldh" value="sp1"
+                aria-label="Checkbox for following text input" checked>
+            </div>
+
+            <a class="col-md-2 col-3 d-block py-2  my-2 bg-white rounded-3 border" href="../HTML/book-detail.html">
+              <img src="../IMG/sach.jpg" alt="item" class="img-fluid">
+            </a>
+
+            <div class="col-md-8 col-7 h-100 ps-3 d-flex flex-column align-items-start">
+              <div class="h6 pt-md-3 pt-1 m-0 pe-2">The Best Of Attack On Titan: In Color Vol. 2</div>
+
+              <div class="flex-1 mt-md-3 mt-1 w-100 d-flex">
+                <span class="h5-md h6 color-price m-0">99.000đ</span>
+                <span class="text-decoration-line-through ms-2 fs-md-6 fs-7 float-end">999.990.000đ</span>
+              </div>
+
+              <div class="flex-1 row align-items-md-center w-100">
+                <div class="col-md-6 col-12">
+
+                  <div class="input-group border rounded-2 mb-md-3 mb-2 mt-3">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number fs-md-6 fs-7 px-2 py-1" data-type="minus"
+                        data-field="quantity">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                    </span>
+
+                    <input type="text" name="sp1"
+                      class="form-control input-number input-focus-none text-center fs-md-6 fs-7" value="1" min="0">
+
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number fs-md-6 fs-7 px-2 py-1" data-type="plus"
+                        data-field="quantity">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </span>
+
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-12 h5-md h6 text-danger">99.000đ</div>
+              </div>
+            </div>
+
+            <div class="col-md-1 col-1">
+              <button class="btn btn-danger fs-8"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3 px-md-3">
+          <div class="input-group-text w-100 text-wrap flex-wrap">
+            <div class="col-1">
+              <input class="form-check-input mt-0 border-2" type="checkbox" name="ktldh" value="sp2"
+                aria-label="Checkbox for following text input" checked>
+            </div>
+
+            <a class="col-md-2 col-3 d-block py-2  my-2 bg-white rounded-3 border" href="../HTML/book-detail.html">
+              <img src="../IMG/sach.jpg" alt="item" class="img-fluid">
+            </a>
+
+            <div class="col-md-8 col-7 h-100 ps-3 d-flex flex-column align-items-start">
+              <div class="h6 pt-md-3 pt-1 m-0 pe-2">The Best Of Attack On Titan: In Color Vol. 2</div>
+
+              <div class="flex-1 mt-md-3 mt-1 w-100 d-flex">
+                <span class="h5-md h6 color-price m-0">99.000đ</span>
+                <span class="text-decoration-line-through ms-2 fs-md-6 fs-7 float-end">999.990.000đ</span>
+              </div>
+
+              <div class="flex-1 row align-items-md-center w-100">
+                <div class="col-md-6 col-12">
+
+                  <div class="input-group border rounded-2 mb-md-3 mb-2 mt-3">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number fs-md-6 fs-7 px-2 py-1" data-type="minus"
+                        data-field="quantity">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                    </span>
+
+                    <input type="text" name="sp2"
+                      class="form-control input-number input-focus-none text-center fs-md-6 fs-7" value="1" min="0">
+
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number fs-md-6 fs-7 px-2 py-1" data-type="plus"
+                        data-field="quantity">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </span>
+
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-12 h5-md h6 text-danger">99.000đ</div>
+              </div>
+            </div>
+
+            <div class="col-md-1 col-1">
+              <button class="btn btn-danger fs-8"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3 px-md-3">
+          <div class="input-group-text w-100 text-wrap flex-wrap">
+            <div class="col-1">
+              <input class="form-check-input mt-0 border-2" type="checkbox" name="ktldh" value="sp3"
+                aria-label="Checkbox for following text input" checked>
+            </div>
+
+            <a class="col-md-2 col-3 d-block py-2  my-2 bg-white rounded-3 border" href="../HTML/book-detail.html">
+              <img src="../IMG/sach.jpg" alt="item" class="img-fluid">
+            </a>
+
+            <div class="col-md-8 col-7 h-100 ps-3 d-flex flex-column align-items-start">
+              <div class="h6 pt-md-3 pt-1 m-0 pe-2">The Best Of Attack On Titan: In Color Vol. 2</div>
+
+              <div class="flex-1 mt-md-3 mt-1 w-100 d-flex">
+                <span class="h5-md h6 color-price m-0">99.000đ</span>
+                <span class="text-decoration-line-through ms-2 fs-md-6 fs-7 float-end">999.990.000đ</span>
+              </div>
+
+              <div class="flex-1 row align-items-md-center w-100">
+                <div class="col-md-6 col-12">
+
+                  <div class="input-group border rounded-2 mb-md-3 mb-2 mt-3">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number fs-md-6 fs-7 px-2 py-1" data-type="minus"
+                        data-field="quantity">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                    </span>
+
+                    <input type="text" name="sp3"
+                      class="form-control input-number input-focus-none text-center fs-md-6 fs-7" value="1" min="0">
+
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number fs-md-6 fs-7 px-2 py-1" data-type="plus"
+                        data-field="quantity">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </span>
+
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-12 h5-md h6 text-danger">99.000đ</div>
+              </div>
+            </div>
+
+            <div class="col-md-1 col-1">
+              <button class="btn btn-danger fs-8"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center pb-3 pt-3 ps-md-4 ps-3 pb-md-1 py-2">
+        <i class="fa-solid fa-money-bill-wave"></i>
+        <span class="ms-2 text-nowrap h5 mb-0">XÁC NHẬN ĐẶT HÀNG</span>
+      </div>
+      <div class="col-12 px-md-5 d-flex justify-content-end">
+        <table class="table table-borderless col-12 text-end border-bottom border-2 pb-2">
+          <tbody>
+            <tr>
+              <td class="">Thành tiền</td>
+              <td class="text-danger fw-bold">99.000đ</td>
+            </tr>
+            <tr>
+              <td class="">Phí vận chuyển (Giao hàng tiêu chuẩn)</td>
+              <td class="text-danger fw-bold">19.000đ</td>
+            </tr>
+            <tr>
+              <td class="">Tổng Số Tiền (gồm VAT)</td>
+              <td class="text-danger fw-bold">118.000đ</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-12 py-1 px-md-5 pb-3 d-flex justify-content-between flex-wrap">
+        <a href="../HTML/cart.html" class="col-md-3 col-12 d-block text-danger btn btn-light border-2 border">Quay lại giỏ hàng</a>
+        <input type="submit" name="submit" id="submit" class="col-md-3 mt-md-0 mt-2 col-12 d-block btn btn-danger float-end" value="Xác nhận thanh toán">
+      </div>
+    </form>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer"></footer>
+
+
+  <!-- <script src="../JS/index.js"></script> -->
+  <script src="../JS/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script>
+    btnGo();
+    setupCounter();
+    truyenBien();
+  </script>
+</body>
+</html>
