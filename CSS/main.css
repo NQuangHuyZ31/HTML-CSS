@@ -407,6 +407,10 @@ a {
   .dangnhap-dangky {
     height: 380px;
   }
+
+  .slideshow{
+    display: none;
+  }
 }
 
 .slideshow{
