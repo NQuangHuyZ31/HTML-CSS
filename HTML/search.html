@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+
+  <title>Dịch vụ</title>
+</head>
+<body class="body transition-opacity opacity-0 bg-maunhat overflow-x-hidden">
+
+  <!-- HEADER -->
+  <header class="header bg-header text-white pb-3 pt-md-3 pt-2" id="header"></header>
+
+  <!-- BODY -->
+  <div class="container mt-4" id="container">
+    <div class="row bg-white position-relative pb-3">
+      <div class="col-md-3 col-8 ps-md-4 pe-md-3 py-3 my-md-3 bg-white border-end border-2" id="sidebar"
+        style="right: 100%; opacity: 0;">
+        <div class="h4 pb-3 border-bottom border-2 mb-2 position-relative">
+          LỌC THEO
+        </div>
+
+        <div class="py-2 mt-2">
+          <div class="h6">DANH MỤC CHÍNH</div>
+          <div class="text-black">
+            <ol class="list-unstyled m-0">
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Sách Tiếng Việt</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Sách Văn Học</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Sách Tâm Lý</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Sách Kỹ Năng</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Sách Kinh Tế</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Sách Tiểu Thuyết</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Sách Thiếu Nhi</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Sách Ngoại Ngữ</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Sách Khoa Học</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Sách Giáo Khoa</a></li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <div class="h6">GIÁ</div>
+          <div class="text-black">
+            <ol class="list-unstyled m-0">
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">0đ - 150.000đ</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">150.000đ - 300.000đ</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">300.000đ - 500.000đ</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">500.000đ - 1.000.000đ</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">1.000.000đ Trở Lên</a></li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <div class="h6">THƯƠNG HIỆU</div>
+          <div class="text-black">
+            <ol class="list-unstyled m-0">
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">OEM</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Thiên Long</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Deli</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Ariline</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Hồng Hà</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Stacom</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Faber-Castell</a></li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <div class="h6">LỨA TUỔI</div>
+          <div class="text-black">
+            <ol class="list-unstyled m-0">
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Trên 3 tuỏi</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Trên 6 tuổi</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Trên 10 tuổi</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Trên 14 tuổi</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Trên 16 tuổi</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Trên 18 tuổi</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Từ 8 - 14 tuổi</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Từ 14 -16 tuổi</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Từ 16 - 18 tuổi</a></li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <div class="h6">NƠI SẢN XUẤT</div>
+          <div class="text-black">
+            <ol class="list-unstyled m-0">
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Nhật bản</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Trung Quốc</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Việt Nam</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Thái Lan</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Hàn Quốc</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Malaysia</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Đức</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Ấn Độ</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">Hàn Quốc</a></li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <div class="h6">NHÀ XUẤT BẢN</div>
+          <div class="text-black">
+            <ol class="list-unstyled m-0">
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">NXB Kim Đồng</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">NXB Trẻ</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">NXB Dân Trí</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">NXB Thanh Niên</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">NXB Văn Học</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">NXB Hà Nội</a></li>
+              <li><input type="checkbox"><a href="#" class="text-black ps-2">NXB Mỹ Thuật</a></li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-9 col-12 my-md-3 transition-opacity set-h">
+        <div class=" col-12 h4 pt-3 pb-3 ps-md-3 text-danger d-flex justify-content-between align-items-center m-0">
+          <span>DANH SÁCH LỌC</span>
+          <span id="sidebar-toggle" class="ms-2 py-1 px-2 rounded-2 position-relative bg-white" style="left: 0;"
+            onclick="showSidebar()"><i class="fa-brands fa-servicestack"></i></span>
+        </div>
+
+        <div class="col-12 px-md-3" style="text-align: justify;">
+          <div class="row">
+            <span class="h4 w-md-100 mb-2">Kết quả tìm kiếm: (999 kết quả)</span>
+  
+            <select class="form-select w-md-25 px-4 mx-md-3" style="width: 45%; margin: 0 5%;" aria-label="Default select example">
+              <option selected>Sắp xếp theo</option>
+              <option value="1">Từ thấp đến cao</option>
+              <option value="2">Từ cao đến thấp</option>
+              <option value="3">Bán chạy</option>
+              <option value="4">Giảm giá</option>
+              <option value="3">Mới nhất</option>
+            </select>
+            
+            <select class="form-select w-md-25 px-4 mx-md-3" style="width: 35%; margin: 0 5%;" aria-label="Default select example">
+              <option selected>Loại sách</option>
+              <option value="1">Sách mới</option>
+              <option value="2">Sách cũ</option>
+            </select>
+          </div>
+
+          <div class="row mt-4">
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+            <div class="product-item col-md-3 col-6 px-2 d-flex flex-column mt-md-0 mt-3"></div>
+          </div>
+
+          <div class="row mt-4">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link text-danger" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link text-danger" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link text-danger" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link text-danger" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link text-danger" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer"></footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <!-- <script src="../JS/index.js"></script> -->
+
+  <script src="../JS/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <script>
+    btnGo();
+    truyenBien();
+  </script>
+</body>
+</html>
